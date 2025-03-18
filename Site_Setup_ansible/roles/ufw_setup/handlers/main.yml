@@ -1,0 +1,8 @@
+---
+# handlers file for ufw_setup
+- name: Restart UFW
+  service:
+    name: ufw
+    state: restarted
+  become: true
+

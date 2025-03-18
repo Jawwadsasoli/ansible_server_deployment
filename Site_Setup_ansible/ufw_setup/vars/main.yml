@@ -1,0 +1,4 @@
+---
+# vars file for ufw_setup
+ufw_default_rule: "deny"
+

@@ -1,0 +1,18 @@
+---
+# tasks file for ufw_setup
+- name: Install ufw
+  apt:
+    name: ufw
+    state: present
+  become: true
+
+- name: Enable ufw
+  ufw:
+    state: enabled
+  become: true
+
+- name: Allow apache2 Service
+  ufw:
+    rule: allow
+    name: "Apache Full"
+  become: true
