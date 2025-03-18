@@ -1,0 +1,4 @@
+---
+# defaults file for ufw_setup
+ufw_default_policy: "deny incoming"
+
